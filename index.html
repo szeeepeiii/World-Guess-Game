@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman</title>
+        <script type="text/javascript" src="game.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=McLaren&display=swap" rel="stylesheet">
+        <h1 style="color:salmon; text-align: center; font-family: 'McLaren', cursive;">Hangman Game</h1>
+    <p style="font-family:Shadows Into Light, cursive; color: darkorchid; font-size: 180%; text-align: center;"><p2></p2> Insturctions: Click on the letters to see the correct words</p2></p>
+
+</head>
+<body style="background-color:lightblue;"> 
+    <div class="container">
+            <div class="row">
+              <div class="col-5"></div>
+    <body onload="setup(); newWord();">
+        <div id="catOverlay">
+        
+        <div class="container">
+            <div id="topsection">
+                <h3 id="word"></h3>
+                <p id="wins">Wins: 0</p>
+                <p id="losses">Losses: 0</p>
+            </div>
+            <div id="ctxtab">
+                <canvas id="hangman" width="200px" height="200px"></canvas>
+            
+                <table id="alphabet"></table>
+            </div> 
+            
+            <div id="btnContainer">
+                <button onclick="newWord()">New word</button>
+            </div> 
+        </div> 
+        <div id="footerTop"> 
+        </div>
+        </div>
+    </div>
+</body>
